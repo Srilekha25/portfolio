@@ -1,38 +1,110 @@
 @import "themes";
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+
+@mixin box {
+  // background-color: $color1;
+  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  //text-align: center;
+  border: 0.1rem solid transparent;
+  font-family: "Cutive Mono", monospace;
+  //font-size: 20px;
+}
 
 body {
-  background-color: $bgcolor;
+  background-color: #CBEDD5;
+  
 
   .navbar {
-    background-color: $navcolor;
+    background-color: #CBEDD5;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
-    position: sticky;   
-    
+    align-items: center;
+    position: sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
 
-    .navbar__name {
-        
-        align-items: flex-start;
-        
-    }
-    .navbar__menu {
-        
-        
-        
+    .navbar__name{
+      margin-left: 3%;
+      font-size: 20px;
+      font-family: "Cutive Mono", monospace;
     }
 
     a {
-        text-decoration: none;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 10px;
-        margin: auto;
-        color: $textcolor;
-        
+      text-decoration: none;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 10px;
+      margin: auto;
+      font-size: 20px;
+      font-family: "Cutive Mono", monospace;
+      transition: width 3s;
+      color: black;
+    }
+    a:hover {
+      width: 50px;
     }
   }
+}
+
+  .home__aboutme{
+    display: flex;
+    justify-content: center;
+    //align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 30vh;
+    font-size: 5rem;
+  }
+
+  
+
+.about-header{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.aboutme{
+  @include box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+}
+
+.aboutme>.aboutme__image>img{
+  height: 500px;
+  margin: 60px;
+}
+
+.aboutme> .aboutme__article > p{
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+}
+
+.skills__list {
+
+  font-family: "Cutive Mono", monospace;
+  font-weight: bold;
+
+  .skiils-list__item{
+    height: 90px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+  }
+  
 }
 

@@ -1,8 +1,9 @@
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 body {
-  background-color: #CFF5E7;
+  background-color: #CBEDD5;
 }
 body .navbar {
-  background-color: #A0E4CB;
+  background-color: #CBEDD5;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -10,9 +11,13 @@ body .navbar {
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
 }
 body .navbar .navbar__name {
-  align-items: flex-start;
+  margin-left: 3%;
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
 }
 body .navbar a {
   text-decoration: none;
@@ -20,5 +25,68 @@ body .navbar a {
   align-items: flex-end;
   padding: 10px;
   margin: auto;
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  transition: width 3s;
   color: black;
+}
+body .navbar a:hover {
+  width: 50px;
+}
+
+.home__aboutme {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 30vh;
+  font-size: 5rem;
+}
+
+.about-header {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutme {
+  border: 0.1rem solid transparent;
+  font-family: "Cutive Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+}
+
+.aboutme > .aboutme__image > img {
+  height: 500px;
+  margin: 60px;
+}
+
+.aboutme > .aboutme__article > p {
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+}
+
+.skills__list {
+  font-family: "Cutive Mono", monospace;
+  font-weight: bold;
+}
+.skills__list .skiils-list__item {
+  height: 90px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
