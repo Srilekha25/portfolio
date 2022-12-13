@@ -5,7 +5,7 @@
   // background-color: $color1;
   // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   //text-align: center;
-  border: 0.1rem solid transparent;
+  border: 0.1rem solid black;
   font-family: "Cutive Mono", monospace;
   //font-size: 20px;
 }
@@ -39,10 +39,12 @@ body {
       margin: auto;
       font-size: 20px;
       font-family: "Cutive Mono", monospace;
-      transition: width 3s;
       color: black;
+      font-weight: bold;
+      transition: width 3s;
     }
     a:hover {
+      color: red;
       width: 50px;
     }
   }
