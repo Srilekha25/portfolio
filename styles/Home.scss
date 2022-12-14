@@ -1,0 +1,54 @@
+@import "_themes";
+@import "_device";
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+@mixin box {
+
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 0.1rem solid transparent;
+  font-family: $font;
+  
+}
+
+  
+  
+    .landing-page__title{
+      display: flex;
+      justify-content: center;
+      //align-items: flex-start;
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 30vh;
+      font-size: 5rem;
+    }
+
+  //Styles for media screens
+
+    @media only screen and (max-width: $phone) {
+      
+      .landing-page__title{
+        display: flex;
+      justify-content: center;
+      //align-items: flex-start;
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 30vh;
+      font-size: 2rem;
+
+      }
+
+
+  }
+  

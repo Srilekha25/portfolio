@@ -1,112 +1,217 @@
-@import "themes";
-@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+// @import "themes";
+// @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
-@mixin box {
-  // background-color: $color1;
-  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  //text-align: center;
-  border: 0.1rem solid black;
-  font-family: "Cutive Mono", monospace;
-  //font-size: 20px;
-}
+// @mixin box {
 
-body {
-  background-color: #CBEDD5;
+//   display: block;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   border: 0.1rem solid transparent;
+//   font-family: $font;
+  
+// }
+
+// //styles for navbar
+
+// body {
+//   background-color: $bgcolor;
   
 
-  .navbar {
-    background-color: #CBEDD5;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:black;
+//   .navbar {
+//     background-color: $bgcolor;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: sticky;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     color:$textcolor;
+//     margin-bottom: 20px;
+    
 
-    .navbar__name{
-      margin-left: 3%;
-      font-size: 20px;
-      font-family: "Cutive Mono", monospace;
-    }
+//     .navbar__name{
+//       margin-left: 3%;
+//       font-size: 20px;
+//       font-weight: bold;
+//       font-family: $font;
+//     }
 
-    a {
-      text-decoration: none;
-      justify-content: center;
-      align-items: flex-end;
-      padding: 10px;
-      margin: auto;
-      font-size: 20px;
-      font-family: "Cutive Mono", monospace;
-      color: black;
-      font-weight: bold;
-      transition: width 3s;
-    }
-    a:hover {
-      color: red;
-      width: 50px;
-    }
-  }
-}
+//     a {
+//       text-decoration: none;
+//       justify-content: center;
+//       align-items: flex-end;
+//       padding: 10px;
+//       margin: auto;
+//       font-size: 20px;
+//       font-family: $font;
+//       color:$textcolor;
+//       font-weight: bold;
+//     }
+//     a:hover {
+//       color: red;
 
-  .home__aboutme{
-    display: flex;
-    justify-content: center;
-    //align-items: flex-start;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
-    font-style: italic;
-    margin-top: 30vh;
-    font-size: 5rem;
-  }
+//     }
+//   }
+// }
+
+// //Styles for home page
+
+// .about-header{
+//   display: block;
+//   margin-block-start: 1em;
+//   margin-block-end: 1em;
+//   color:$textcolor;
+//   font-family: $font-text;
+//   font-size: 40px;
+//   font-weight: 400;
+
+// }
+
+
+//   .home__aboutme{
+//     display: flex;
+//     justify-content: center;
+//     //align-items: flex-start;
+//     text-align: center;
+//     flex-direction: column;
+//     flex-wrap: nowrap;
+//     font-family: "Playfair Display", serif;
+//     font-weight: 900;
+//     font-style: italic;
+//     margin-top: 30vh;
+//     font-size: 5rem;
+//   }
 
   
+// //Styles for About Page
 
-.about-header{
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  color: black;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-.aboutme{
-  @include box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 60%;
-}
-
-.aboutme>.aboutme__image>img{
-  height: 500px;
-  margin: 60px;
-}
-
-.aboutme> .aboutme__article > p{
-  font-size: 20px;
-  font-family: "Cutive Mono", monospace;
-}
-
-.skills__list {
-
-  font-family: "Cutive Mono", monospace;
-  font-weight: bold;
-
-  .skiils-list__item{
-    height: 90px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    text-align: center;
-  }
+// .aboutme-image__and__desc{
+//   @include box;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   //margin-left: 30%; //immediate fix need to work on it
+//   //margin-right: 30%;
   
-}
+// }
 
+// .aboutme-image__and__desc>.aboutme__image>img{
+//   height: 500px;
+//   margin: 20px;
+// }
+
+// .aboutme-image__and__desc> .aboutme__article > p{
+//   font-size: 20px;
+//   font-family: $font;
+//   text-align: left;
+// }
+
+// //Styles for skills page
+
+// .skills__header{
+
+//   display: block;
+//   margin-block-start: 1em;
+//   margin-block-end: 1em;
+//   color:$textcolor;
+//   font-family: $font;
+//   font-size: 40px;
+//   font-weight: 400;
+// }
+
+// .skills__list {
+
+//   font-family: $font;
+//   font-weight: bold;
+
+//   .skiils-list__item{
+//     height: 90px;
+//     display: grid;
+//     grid-auto-flow: row;
+//     font-weight: 400;
+//     grid-template-rows: repeat(4, 1fr);
+//     grid-template-columns: repeat(3, 1fr);
+//     justify-items: center;
+//     text-align: center;
+//   }
+  
+// }
+
+// //Styles for Contact Page
+
+// .contact-section{
+// @include box;  
+// }
+// .contact__header{
+//   display: flex;
+//   justify-content: left;
+//   align-items: center;
+//   font-weight: bold;
+//   font-size: 15px;
+//   font-family: $font-text;
+//   margin-left: 10%;
+
+// }
+
+// .Contact__icons i{
+//   height: 90px;
+// }
+
+// .Contact__icons a{
+
+//   color:$textcolor;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   text-decoration: none;
+//   padding: 20px 20px 50px 20px;
+//   font-family: $font-text;
+
+// }
+
+
+// //Styles for Projects Page
+
+// .project__header{
+//   display: block;
+//   font-size: 70px;
+//   font-weight: 800;
+//   font-family: $font-text;
+// }
+
+// .project__group{
+//   @include box;
+//   display: flex;
+//   flex-direction: row;
+
+//   .project__group__item > img{
+//     height: 250px;
+//     width: 500px;
+//     padding: 20px;
+    
+//   }
+
+//   .project__group__item-desc p{
+//     font-family: $font;
+//     font-weight: bold;
+//     text-align: start;
+//   }
+
+//   .project__group__item-link{
+//     align-items: center;
+
+//   }
+// }
+
+
+
+// /////Styles for Media Screen
+
+
+// @media screen and (min-width: 500px) {
+  
+// }

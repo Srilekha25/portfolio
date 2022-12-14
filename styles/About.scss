@@ -1,0 +1,58 @@
+@import "_themes";
+@import "_device";
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+@mixin box {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 0.1rem solid transparent;
+  font-family: $font;
+}
+
+.about-header {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  color: $textcolor;
+  font-family: $font-text;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.aboutme-image__and__desc > .aboutme__image  > img {
+  @include box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 500px;
+  margin: 20px;
+
+  .aboutme__article  > p {
+    font-size: 20px;
+    font-family: $font;
+    text-align: left;
+    color: red;
+  }
+}
+
+// .aboutme-image__and__desc > .aboutme__article > p {
+//   font-size: 20px;
+//   font-family: $font;
+//   text-align: left;
+// }
+
+// .aboutme__image{
+//   @include box;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: center;
+//   height: 500px;
+// }
+
+@media only screen and (max-width: $phone) {
+}

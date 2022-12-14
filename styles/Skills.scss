@@ -1,0 +1,46 @@
+@import "_themes";
+@import "_device";
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+@mixin box {
+
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 0.1rem solid transparent;
+  font-family: $font;
+  
+}
+
+
+.skills__header{
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color:$textcolor;
+    font-family: $font;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  
+  .skills__list {
+  
+    font-family: $font;
+    font-weight: bold;
+  
+    .skiils-list__item{
+      height: 90px;
+      display: grid;
+      grid-auto-flow: row;
+      font-weight: 400;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      text-align: center;
+    }
+    
+  }
+  

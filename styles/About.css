@@ -1,0 +1,34 @@
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+.about-header {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.aboutme-image__and__desc > .aboutme__image > img {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 0.1rem solid transparent;
+  font-family: "Cutive Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 500px;
+  margin: 20px;
+}
+.aboutme-image__and__desc > .aboutme__image > img .aboutme__article > p {
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  text-align: left;
+  color: red;
+}/*# sourceMappingURL=About.css.map */
