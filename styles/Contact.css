@@ -10,25 +10,47 @@
 }
 
 .contact__header {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "Roboto Mono", monospace;
-  margin-left: 10%;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  color: black;
+  font-family: "Cutive Mono", monospace;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .Contact__icons i {
   height: 90px;
 }
 
-.Contact__icons a {
-  color: black;
+.Contact__icons {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+}
+.Contact__icons i a {
+  color: black;
   text-decoration: none;
-  padding: 20px 20px 50px 20px;
+  padding: 10px 10px 10px 10px;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__header {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .Contact__icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contact__icons i a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+  }
 }/*# sourceMappingURL=Contact.css.map */

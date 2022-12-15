@@ -1,48 +1,66 @@
 @import "_themes";
 @import "_device";
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
 @mixin box {
-
   display: block;
   justify-content: center;
   text-align: center;
   align-items: center;
   border: 0.1rem solid transparent;
   font-family: $font;
-  
 }
 
+.contact-section {
+  @include box;
+}
+.contact__header {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  color: $textcolor;
+  font-family: $font;
+  font-size: 40px;
+  font-weight: 400;
+}
 
-.contact-section{
-    @include box;  
-    }
-    .contact__header{
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      font-weight: bold;
-      font-size: 15px;
-      font-family: $font-text;
-      margin-left: 10%;
-    
-    }
-    
-    .Contact__icons i{
-      height: 90px;
-    }
-    
-    .Contact__icons a{
-    
-      color:$textcolor;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
+.Contact__icons i {
+  height: 90px;
+}
+
+.Contact__icons {
+  display: flex;
+  flex-direction: column;
+
+  i a {
+    color: $textcolor;
+
+    //justify-content: center;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-family: $font-text;
+    //align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .contact__header {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .Contact__icons {
+    display: flex;
+    flex-direction: column;
+
+    i a {
+      color: $textcolor;
       text-decoration: none;
-      padding: 20px 20px 50px 20px;
+      padding: 10px 10px 10px 10px;
       font-family: $font-text;
-    
+      text-align: center;
     }
-    
-    
+  }
+}

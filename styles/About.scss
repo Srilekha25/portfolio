@@ -57,6 +57,17 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .about-page__article  > p {
+  // font-size: 20px;
+  // font-family: $font;
+  // text-align: left;
+
+  font-family: $font;
+  font-weight: bold;
+  text-align: left;
+
+}
     
 }
 
