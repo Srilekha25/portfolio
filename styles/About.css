@@ -34,7 +34,7 @@
   text-align: left;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
   .about-Page__header {
     font-size: 20px;
     font-weight: 400;
@@ -48,6 +48,7 @@
   .about-page__article > p {
     font-family: "Cutive Mono", monospace;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=About.css.map */

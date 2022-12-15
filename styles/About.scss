@@ -22,57 +22,42 @@
   font-weight: 400;
 }
 
-.about-page-image__and__desc   {
+.about-page-image__and__desc {
   @include box;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 
-  .about-page__image   img{
-  height: 500px;
-  margin: 20px;
+  .about-page__image img {
+    height: 500px;
+    margin: 20px;
+  }
+
+  .about-page__article > p {
+    font-size: 20px;
+    font-family: $font;
+    text-align: left;
+  }
 }
 
-.about-page__article  > p {
-  font-size: 20px;
-  font-family: $font;
-  text-align: left;
-}
-  
-}
-
-@media only screen and (max-width: $phone) {
-
- 
+@media only screen and (max-width: $tablet) {
   .about-Page__header {
     font-size: 20px;
     font-weight: 400;
   }
-  
-  .about-page-image__and__desc{
 
+  .about-page-image__and__desc {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  .about-page__article  > p {
-  // font-size: 20px;
-  // font-family: $font;
-  // text-align: left;
-
-  font-family: $font;
-  font-weight: bold;
-  text-align: left;
-
+  .about-page__article > p {
+    font-family: $font;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+  }
 }
-    
-}
-
-
-
-
-
-

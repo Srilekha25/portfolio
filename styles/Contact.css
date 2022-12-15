@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
   .contact__header {
     font-size: 20px;
     font-weight: 400;

@@ -35,10 +35,11 @@ body .navbar a {
   font-weight: bold;
 }
 body .navbar a:hover {
+  transition: width 2s;
   color: red;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
   body .navbar {
     background-color: #F0DBDB;
     height: 70px;
@@ -46,7 +47,7 @@ body .navbar a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 10px;
   }
   body .navbar__name {

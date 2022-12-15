@@ -13,7 +13,7 @@
   font-size: 5rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
   .landing-page__title {
     display: flex;
     justify-content: center;
