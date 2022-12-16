@@ -1,6 +1,6 @@
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-.skills-page__header {
+.header-title__header-title--font-lg {
   display: block;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
@@ -12,7 +12,7 @@
   font-weight: 400;
 }
 
-.skills-page__list {
+.section__skills--grid {
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
@@ -20,7 +20,7 @@
   font-family: "Cutive Mono", monospace;
   font-weight: bold;
 }
-.skills-page__list .skiils-page-list__item {
+.section__skills--grid .section__skills-list__item {
   height: 90px;
   font-weight: 400;
   grid-template-rows: repeat(4, 1fr);
@@ -28,11 +28,11 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .skills-page__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
-  .skills-page__list {
+  .section__skills--grid {
     display: grid;
     grid-auto-flow: row;
     justify-items: center;

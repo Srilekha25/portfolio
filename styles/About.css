@@ -1,6 +1,6 @@
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-.about-Page__header {
+.header-title__header-title--font-lg {
   display: block;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
@@ -12,7 +12,7 @@
   font-weight: 400;
 }
 
-.about-page-image__and__desc {
+.article__about {
   display: block;
   justify-content: center;
   text-align: center;
@@ -24,28 +24,28 @@
   flex-direction: row;
   justify-content: center;
 }
-.about-page-image__and__desc .about-page__image img {
+.article__about .section__photo--flex--row img {
   height: 500px;
   margin: 20px;
 }
-.about-page-image__and__desc .about-page__article > p {
+.article__about .section__p--flex--font > p {
   font-size: 20px;
   font-family: "Cutive Mono", monospace;
   text-align: left;
 }
 
 @media only screen and (max-width: 770px) {
-  .about-Page__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
-  .about-page-image__and__desc {
+  .article__about {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-  .about-page__article > p {
+  .section__p--flex--font > p {
     font-family: "Cutive Mono", monospace;
     font-weight: bold;
     text-align: center;

@@ -1,18 +1,12 @@
 @import "_themes";
 @import "_device";
+@import "_mixins";
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
-@mixin box {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border: 0.1rem solid transparent;
-  font-family: $font;
-}
 
-.about-Page__header {
+.header-title__header-title--font-lg {
+ 
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -22,19 +16,19 @@
   font-weight: 400;
 }
 
-.about-page-image__and__desc {
+.article__about {
   @include box;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 
-  .about-page__image img {
+  .section__photo--flex--row img {
     height: 500px;
     margin: 20px;
   }
 
-  .about-page__article > p {
+  .section__p--flex--font > p {
     font-size: 20px;
     font-family: $font;
     text-align: left;
@@ -42,19 +36,19 @@
 }
 
 @media only screen and (max-width: $tablet) {
-  .about-Page__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
 
-  .about-page-image__and__desc {
+  .article__about {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
-  .about-page__article > p {
+  .section__p--flex--font > p {
     font-family: $font;
     font-weight: bold;
     text-align: center;

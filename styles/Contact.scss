@@ -1,21 +1,16 @@
 @import "_themes";
 @import "_device";
+@import "_mixins";
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
-@mixin box {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border: 0.1rem solid transparent;
-  font-family: $font;
-}
-
-.contact-section {
+.section__icons--box {
   @include box;
 }
-.contact__header {
+
+
+.header-title__header-title--font-lg{
+
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -25,33 +20,26 @@
   font-weight: 400;
 }
 
-.Contact__icons i {
-  height: 90px;
-}
-
-.Contact__icons {
+.section__icons--align {
   display: flex;
   flex-direction: column;
 
   i a {
     color: $textcolor;
-
-    //justify-content: center;
     text-decoration: none;
     padding: 10px 10px 10px 10px;
     font-family: $font-text;
-    //align-items: center;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: $tablet) {
-  .contact__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
 
-  .Contact__icons {
+  .section__icons--align {
     display: flex;
     flex-direction: column;
 
