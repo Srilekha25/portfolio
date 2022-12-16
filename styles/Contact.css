@@ -1,6 +1,6 @@
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-.contact-section {
+.section__icons--box {
   display: block;
   justify-content: center;
   text-align: center;
@@ -9,7 +9,7 @@
   font-family: "Cutive Mono", monospace;
 }
 
-.contact__header {
+.header-title__header-title--font-lg {
   display: block;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
@@ -21,15 +21,11 @@
   font-weight: 400;
 }
 
-.Contact__icons i {
-  height: 90px;
-}
-
-.Contact__icons {
+.section__icons--align {
   display: flex;
   flex-direction: column;
 }
-.Contact__icons i a {
+.section__icons--align i a {
   color: black;
   text-decoration: none;
   padding: 10px 10px 10px 10px;
@@ -38,15 +34,15 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .contact__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
-  .Contact__icons {
+  .section__icons--align {
     display: flex;
     flex-direction: column;
   }
-  .Contact__icons i a {
+  .section__icons--align i a {
     color: black;
     text-decoration: none;
     padding: 10px 10px 10px 10px;

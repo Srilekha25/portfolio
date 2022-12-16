@@ -12,54 +12,50 @@
   font-family: $font;
 }
 
-.project-page__header {
+.header-title__header-title--font-lg {
   display: block;
   font-size: 70px;
   font-weight: 800;
   font-family: $font-text;
 }
 
-.project-page__group {
+.article__gallery--grid {
   @include box;
-  display: flex;
+  display: grid;
   flex-direction: row;
 
-  .project-page__group__item  img {
+  .section__photo--grid img{
     height: 250px;
     width: 500px;
     padding: 20px;
     border: 0.1rem solid black;
   }
 }
-.project-page__group__item-desc p {
+.section__p--grid--font p {
   font-family: $font;
   font-weight: bold;
   text-align: left;
   
 }
 
-.project-page__group__item-link{
-  align-items: center;
-  text-align: center;
-}
 
 
 @media only screen and (max-width: $tablet) {
 
  
-  .project-page__header {
+  .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
   
-  .project-page__group{
+  .article__gallery--grid{
 
     display: flex;
   flex-direction: column;
   justify-items: center;
   text-align: center;
 
-  .project-page__group__item  img {
+  .section__photo--grid  img {
     height: 150px;
     width: 300px;
     padding: 10px;
