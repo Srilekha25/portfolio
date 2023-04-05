@@ -1,17 +1,16 @@
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 body {
-  background-color: #F0DBDB;
+  background-color: #f8f3f3;
 }
 body .navbar {
-  background-color: #F0DBDB;
+  background-color: #f8f3f3;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
@@ -41,7 +40,7 @@ body .navbar a:hover {
 
 @media only screen and (max-width: 770px) {
   body .navbar {
-    background-color: #F0DBDB;
+    background-color: #f8f3f3;
     height: 70px;
     display: flex;
     flex-direction: row;

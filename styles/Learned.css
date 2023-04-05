@@ -7,27 +7,51 @@
   font-family: "Roboto Mono", monospace;
 }
 
-.article__gallery--grid {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border: 0.1rem solid transparent;
-  font-family: "Cutive Mono", monospace;
-  display: grid;
-  flex-direction: row;
-}
-.article__gallery--grid .section__photo--grid img {
-  height: 250px;
-  width: 500px;
-  padding: 20px;
-  border: 0.1rem solid black;
+i {
+  margin: 5px;
+  color: black;
 }
 
-.section__p--grid--font p {
+.article__projects_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.projects__group__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+}
+.projects__group__item .projects__group__item--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects__group__item .projects__group__item--title img {
+  height: 250px;
+  width: 200px;
+  margin: 20px;
+  border: 0.1rem solid black;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects__group__item .projects__group__item--title h3 {
   font-family: "Cutive Mono", monospace;
   font-weight: bold;
-  text-align: left;
+}
+.projects__group__item .projects__group__item__description p {
+  display: inline;
 }
 
 @media only screen and (max-width: 770px) {
@@ -35,16 +59,10 @@
     font-size: 20px;
     font-weight: 400;
   }
-  .article__gallery--grid {
+  .article__projects_group {
     display: flex;
     flex-direction: column;
     justify-items: center;
     text-align: center;
-  }
-  .article__gallery--grid .section__photo--grid img {
-    height: 150px;
-    width: 300px;
-    padding: 10px;
-    border: 0.1rem solid black;
   }
 }/*# sourceMappingURL=Learned.css.map */

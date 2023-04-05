@@ -3,15 +3,6 @@
 @import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
-@mixin box {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border: 0.1rem solid transparent;
-  font-family: $font;
-}
-
 .header-title__header-title--font-lg {
   display: block;
   font-size: 70px;
@@ -19,48 +10,65 @@
   font-family: $font-text;
 }
 
-.article__gallery--grid {
-  @include box;
-  display: grid;
-  flex-direction: row;
+i{
+  margin: 5px;
+  color: black;
+}
 
-  .section__photo--grid img{
-    height: 250px;
-    width: 500px;
-    padding: 20px;
-    border: 0.1rem solid black;
+.article__projects_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.projects__group__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+
+  .projects__group__item--title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 250px;
+      width: 200px;
+      margin: 20px;
+      border: 0.1rem solid black;
+      border-radius: 20px;
+      object-fit:cover;
+    }
+    h3 {
+      font-family: $font;
+      font-weight: bold;
+    }
+  }
+  .projects__group__item__description {
+    p {
+      display: inline;
+    }
   }
 }
-.section__p--grid--font p {
-  font-family: $font;
-  font-weight: bold;
-  text-align: left;
-  
-}
-
-
 
 @media only screen and (max-width: $tablet) {
-
- 
   .header-title__header-title--font-lg {
     font-size: 20px;
     font-weight: 400;
   }
-  
-  .article__gallery--grid{
 
+  .article__projects_group {
     display: flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-
-  .section__photo--grid  img {
-    height: 150px;
-    width: 300px;
-    padding: 10px;
-    border: 0.1rem solid black;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
   }
-  }
-  
 }
