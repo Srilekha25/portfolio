@@ -1,0 +1,29 @@
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+.landing-page__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 30vh;
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .landing-page__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 30vh;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=index.css.map */

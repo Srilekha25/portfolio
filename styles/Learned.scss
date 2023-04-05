@@ -48,12 +48,13 @@ i{
       object-fit:cover;
     }
     h3 {
-      font-family: $font;
+      font-family: $font-text;
       font-weight: bold;
     }
   }
   .projects__group__item__description {
     p {
+      font-family: $font-text;
       display: inline;
     }
   }
