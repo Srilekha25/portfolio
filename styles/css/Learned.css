@@ -47,10 +47,11 @@ i {
      object-fit: cover;
 }
 .projects__group__item .projects__group__item--title h3 {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: bold;
 }
 .projects__group__item .projects__group__item__description p {
+  font-family: "Roboto Mono", monospace;
   display: inline;
 }
 
