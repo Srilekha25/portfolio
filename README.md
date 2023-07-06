@@ -1,6 +1,6 @@
 Hello there! Welcome to my portfolio which is a representation of my skills, projects and my contact details.
 
-The project is hosted on github pages on https://srilekha25.github.io/
+The project is hosted on github pages on https://srilekha25.github.io/portfolio/
 
 ![Portfolio](Images/portfolio.png)
 
