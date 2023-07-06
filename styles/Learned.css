@@ -1,0 +1,77 @@
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+.header-title__header-title--font-lg {
+  display: block;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Roboto Mono", monospace;
+}
+
+i {
+  margin: 5px;
+  color: black;
+}
+
+.article__projects_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.projects__group__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+}
+.projects__group__item .projects__group__item--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects__group__item .projects__group__item--title img {
+  height: 250px;
+  width: 200px;
+  margin: 20px;
+  border: 0.1rem solid black;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects__group__item .projects__group__item--title h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+.projects__group__item .projects__group__item__description p {
+  font-family: "Roboto Mono", monospace;
+  display: inline;
+}
+
+.footer {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+.footer a {
+  color: black;
+}
+
+@media only screen and (max-width: 770px) {
+  .header-title__header-title--font-lg {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .article__projects_group {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Learned.css.map */

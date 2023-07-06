@@ -1,0 +1,65 @@
+@import url("https://fonts.google.com/specimen/Cutive+Mono?query=cuti");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+body {
+  background-color: linear-gradient(#e66465, #9198e5);
+}
+body .navbar {
+  background-color: #f8f3f3;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  margin-bottom: 10px;
+}
+body .navbar .navbar__name {
+  margin-left: 3%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Cutive Mono", monospace;
+}
+body .navbar a {
+  text-decoration: none;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  color: black;
+  font-weight: bold;
+}
+body .navbar a:hover {
+  transition: width 2s;
+  color: red;
+}
+
+@media only screen and (max-width: 770px) {
+  body .navbar {
+    background-color: #f8f3f3;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  body .navbar__name {
+    display: none;
+  }
+  body .navbar__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body .navbar__menu a {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
